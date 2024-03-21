@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #302e2b;
+    display: flexbox;
+
+}
+h1{
+    color: aliceblue;
+    font-size: 80px;
+    margin-left: 400px;
+}
+.container{
+    margin-top: 200px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.child{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    margin-left:20px ;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Make the container position relative */
+    overflow: hidden; /* Hide overflow */
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('asite/chess-img.jpg');
+}
+.name{
+    height: 25px;
+    width: 170px;
+    color: white;
+    border: 2px solid whitesmoke;
+    background-color: blueviolet;
+}
+
+.child img{
+    position: absolute; /* Make the image position absolute */
+    top: 0; /* Align the image to the top of the container */
+    left: 0; /* Align the image to the left of the container */
+    width: 100%; /* Make the width of the image 100% of its container */
+    height: 100%; /* Make the height of the image 100% of its container */
+    object-fit: cover; /* Scale the image to be as large as possible while maintaining aspect ratio */
+}

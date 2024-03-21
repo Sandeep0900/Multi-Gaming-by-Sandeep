@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(assite/mario-bg.jpg);
+    background-size: cover;
+}
+#board{
+    width: 540px;
+    height: 540px;
+    margin: 0 auto ;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(assite/soil.png);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div{
+    /* board = 540x540, divide into 3x3 tiles --> 180x180 per div */
+    width: 180px;
+    height: 180px;
+    background-image: url(assite/pipe.png);
+    background-size: cover;
+}
+
+#board div img{
+    /* All img tags inside the tile div tags */
+    width: 100px;
+    height: 100px;
+}
+.restart{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 220px;
+    border-radius: 20px;
+    background-color: purple;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
